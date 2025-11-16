@@ -11,7 +11,8 @@ import {
     Button,
     useDisclosure
 } from "@heroui/react";
-import { FileIcon } from "lucide-react";
+import { FoldersIcon, FolderIcon } from "lucide-react";
+
 import { useState, type ReactNode } from "react";
 import Settings from "@/pages/settings";
 import FolderPicker from "@/pages/folder-picker";
@@ -94,7 +95,7 @@ export function Menu() {
                     <DropdownItem
                         key="directory"
                         shortcut="⌘N"
-                        startContent={<FileIcon className={iconClasses} />}
+                        startContent={<FoldersIcon className={iconClasses} />}
                         onPress={() => openModal("directory")}
                     >
                         Open directory(s)
@@ -103,7 +104,7 @@ export function Menu() {
                     <DropdownItem
                         key="folder"
                         shortcut="⌘C"
-                        startContent={<FileIcon className={iconClasses} />}
+                        startContent={<FolderIcon className={iconClasses} />}
                         onPress={() => openModal("folder")}
                     >
                         Open folder(s)
