@@ -1,10 +1,11 @@
 import { Card, CardBody } from "@heroui/react";
 
 export function InputPreview() {
+
     return (
-        <Card>
+        <Card className="h-full">
             <CardBody>
-                <p>Make beautiful websites regardless of your design experience.</p>
+                <p>Input Preview</p>
             </CardBody>
         </Card>
     );
